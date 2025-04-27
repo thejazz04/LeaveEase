@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Apply Leave | LeaveEase</title>
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <%- include('../public/partials/header') %>
+
+  <div class="container">
+    <h1>Apply for Leave</h1>
+    <form action="/apply-leave" method="POST">
+      <label>From Date:</label>
+      <input type="date" name="from_date" required>
+
+      <label>To Date:</label>
+      <input type="date" name="to_date" required>
+
+      <label>Reason:</label>
+      <textarea name="reason" required></textarea>
+
+      <button type="submit" class="btn">Submit</button>
+    </form>
+  </div>
+
+  <%- include('../public/partials/footer') %>
+</body>
+</html>

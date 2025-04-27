@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Leave History | LeaveEase</title>
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <%- include('../public/partials/header') %>
+
+  <div class="container">
+    <h1>Leave History</h1>
+    <table>
+      <thead>
+        <tr>
+          <th>From</th>
+          <th>To</th>
+          <th>Reason</th>
+          <th>Status</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% leaves.forEach(leave => { %>
+          <tr>
+            <td><%= leave.from_date %></td>
+            <td><%= leave.to_date %></td>
+            <td><%= leave.reason %></td>
+            <td><%= leave.status %></td>
+          </tr>
+        <% }) %>
+      </tbody>
+    </table>
+  </div>
+
+  <%- include('../public/partials/footer') %>
+</body>
+</html>

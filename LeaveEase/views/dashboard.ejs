@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dashboard | LeaveEase</title>
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <%- include('../public/partials/header') %>
+
+  <div class="container">
+    <h1>Welcome, <%= user.name %>!</h1>
+
+    <div class="card">
+      <h2>Leave Summary</h2>
+      <p>Total Leaves Left: <%= user.leave_balance %></p>
+      <a href="/apply-leave" class="btn">Apply for Leave</a>
+    </div>
+
+    <div class="card">
+      <h2>Profile</h2>
+      <p>USN: <%= user.usn %></p>
+      <p>DOB: <%= user.dob %></p>
+      <a href="/profile" class="btn">View Profile</a>
+    </div>
+
+    <div class="card">
+      <h2>Leave History</h2>
+      <a href="/leave-history" class="btn">View Leave History</a>
+    </div>
+  </div>
+
+  <%- include('../public/partials/footer') %>
+</body>
+</html>

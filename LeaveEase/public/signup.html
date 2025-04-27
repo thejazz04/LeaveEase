@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sign Up | LeaveEase</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="login-container">
+    <img src="img/logo.png" alt="LeaveEase Logo" class="logo-img">
+    <h2>Create Your Account</h2>
+    <form action="/signup" method="POST" onsubmit="return validateSignup()">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="date" name="dob" required />
+      <input type="password" id="password" name="password" placeholder="Create Password" required />
+      <input type="password" id="confirm" name="confirm" placeholder="Confirm Password" required />
+      <button type="submit">Sign Up</button>
+      <p id="signup-error" class="error-message" style="display:none;">Passwords do not match or are too short.</p>
+    </form>
+    <p class="signup-link">Already have an account? <a href="/">Login</a></p>
+  </div>
+
+  <script>
+    function validateSignup() {
+      const pw = document.getElementById('password').value;
+      const confirm = document.getElementById('confirm').value;
+      const error = document.getElementById('signup-error');
+      if (pw !== confirm || pw.length < 8) {
+        error.style.display = 'block';
+        return false;
+      }
+      return true;
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Admin Panel | LeaveEase</title>
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <%- include('../public/partials/header') %>
+
+  <div class="container">
+    <h1>Admin Panel</h1>
+    <h2>Pending Leave Applications</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Student</th>
+          <th>From</th>
+          <th>To</th>
+          <th>Reason</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% leaves.forEach(leave => { %>
+          <tr>
+            <td><%= leave.student_name %></td>
+            <td><%= leave.from_date %></td>
+            <td><%= leave.to_date %></td>
+            <td><%= leave.reason %></td>
+            <td>
+              <form action="/admin/approve" method="POST" style="display:inline;">
+                <input type="hidden" name="leave_id" value="<%= leave.id %>">
+                <button type="submit" name="action" value="approve" class="btn green">Approve</button>
+              </form>
+              <form action="/admin/reject" method="POST" style="display:inline;">
+                <input type="hidden" name="leave_id" value="<%= leave.id %>">
+                <button type="submit" name="action" value="reject" class="btn red">Reject</button>
+              </form>
+            </td>
+          </tr>
+        <% }) %>
+      </tbody>
+    </table>
+  </div>
+
+  <%- include('../public/partials/footer') %>
+</body>
+</html>
