@@ -72,7 +72,8 @@ Edit
 
 ## 📸 Screenshots
 
-> _(Add images by dragging them into this section or linking GitHub-hosted assets later)_
+> ![WhatsApp Image 2025-05-24 at 15 38 22_b64cb60e](https://github.com/user-attachments/assets/6f6815be-7706-41f5-91a3-4a27bf90a4f1)
+
 
 ---
 
