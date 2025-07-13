@@ -39,7 +39,17 @@
 
 ---
 
-<pre><code>## 📂 Project Structure ```bash LeaveEase/ ├── public/ # CSS, JS, images ├── views/ # HTML pages or EJS templates ├── routes/ # Express route handlers ├── controllers/ # Business logic and middleware ├── models/ # DB queries and models ├── config/ # Database connection setup ├── .env # Environment variables ├── app.js # Main server file └── README.md # Project documentation ``` </code></pre>
+<pre><code>## 📂 Project Structure ```bash 
+LeaveEase/ 
+  ├── public/ # CSS, JS, images 
+  ├── views/ # HTML pages or EJS templates 
+  ├── routes/ # Express route handlers 
+  ├── controllers/ # Business logic and middleware 
+  ├── models/ # DB queries and models 
+  ├── config/ # Database connection setup 
+  ├── .env # Environment variables 
+  ├── app.js # Main server file 
+  └── README.md # Project documentation ``` </code></pre>
 
 
 ---
