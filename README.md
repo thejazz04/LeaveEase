@@ -53,10 +53,6 @@ LeaveEase/
 ├── app.js # Main server file
 └── README.md # Project documentation
 
-yaml
-Copy
-Edit
-
 ---
 
 ## 🧠 Database Concepts Used
