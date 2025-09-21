@@ -1,5 +1,5 @@
 CREATE DATABASE IF NOT EXISTS leaveease;
-USE leaveease;
+USE <your_db_name>;
 
 -- USERS TABLE
 CREATE TABLE IF NOT EXISTS users (
