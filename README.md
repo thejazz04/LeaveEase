@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🏖️ LeaveEase
+# LeaveEase
 
 ### Modern Employee Leave Management & Audit System
 
